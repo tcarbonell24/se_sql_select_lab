@@ -126,8 +126,10 @@ df_short_title = pd.read_sql("""SELECT SUBSTRING(jobTitle, 1, 2) as short_title 
 # STEP 8
 # Replace None with your code
 sum_total_price = pd.read_sql("""SELECT ROUND(priceEach * quantityOrdered) as orderTotal FROM orderDetails""", conn).sum()
-# print(sum_total_price)
+print(sum_total_price)
 
+#push test
+  
 # STEP 9
 # Replace None with your code
 df_day_month_year = pd.read_sql("""
